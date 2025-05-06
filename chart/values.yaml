@@ -1,0 +1,11 @@
+postgres:
+  host: 127.0.0.1
+  port: "5432"
+  database: notset
+  user: user
+  password: password
+ingress:
+  host: yoururl.com
+cloudsql:
+  credentialsjsonb64: undefined
+  connectionString: undefined
