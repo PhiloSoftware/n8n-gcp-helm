@@ -53,7 +53,7 @@ spec:
             - name: N8N_PORT
               value: "5678"
             - name: N8N_HOST
-              value: {{ .Values.ingress.host }}
+              value: {{ .Values.ingress.host | squote  }}
             - name: WEBHOOK_URL
               value: https://{{ .Values.ingress.host }}/
             - name: N8N_EDITOR_BASE_URL
