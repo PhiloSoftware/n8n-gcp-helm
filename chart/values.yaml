@@ -6,6 +6,8 @@ postgres:
   password: password
 ingress:
   host: yoururl.com
+  traefik:
+    apiVersion: traefik.containo.us/v1alpha1
 cloudsql:
   credentialsjsonb64: undefined
   connectionString: undefined
