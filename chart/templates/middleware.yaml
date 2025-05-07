@@ -7,7 +7,7 @@ spec:
     scheme: https
     permanent: true
 ---
-apiVersion: traefik.containo.us/v1alpha1
+apiVersion: {{ .Values.ingress.traefik.apiVersion }}
 kind: Middleware
 metadata:
   name: n8n-securityheaders
