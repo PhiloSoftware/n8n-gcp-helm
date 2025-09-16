@@ -58,6 +58,8 @@ spec:
               value: https://{{ .Values.ingress.host }}/
             - name: N8N_EDITOR_BASE_URL
               value: https://{{ .Values.ingress.host }}/
+            - name: NODE_FUNCTION_ALLOW_BUILTIN
+              value: *
           image: n8nio/n8n
           name: n8n
           ports:
