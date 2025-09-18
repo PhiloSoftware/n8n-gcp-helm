@@ -66,9 +66,11 @@ spec:
             - containerPort: 5678
           resources:
             requests:
-              memory: "250Mi"
-            limits:
               memory: "500Mi"
+              cpu: 500m
+            limits:
+              memory: "700Mi"
+              cpu: 700m
           volumeMounts:
             - mountPath: /home/node/.n8n
               name: n8n-claim0
@@ -92,7 +94,7 @@ spec:
               cpu: 50m
               memory: "64Mi"
             limits:
-              memory: "1Gi"
+              memory: "500m"
               cpu: 500m
       restartPolicy: Always
       volumes:
